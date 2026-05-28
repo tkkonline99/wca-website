@@ -1,0 +1,16 @@
+{
+  "name": "Wisdom Children Association",
+  "short_name": "WCA",
+  "description": "Wisdom Children Association supports vulnerable children, women, families, and communities through education, health, advocacy, and humanitarian action.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f3ea",
+  "theme_color": "#0f5f5c",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
