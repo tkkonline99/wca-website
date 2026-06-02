@@ -9,6 +9,18 @@ const programPages = {
     bodyKey: "programEducationDetailBody",
     image: "education",
     alt: "Children showing school kits distributed by WCA",
+    galleryImages: [
+      ["education", "Children showing school kits distributed by WCA"],
+      ["event-september-06-2025-1", "Children raising school kits during the Kinama distribution"],
+      ["event-september-06-2025-2", "Students gathered with school kits in Kinama"],
+      ["event-september-06-2025-3", "WCA team supporting pupils at the Kinama activity"],
+      ["event-september-13-2025-1", "School kits arranged for pupils in Gatumba"],
+      ["event-september-13-2025-2", "Children and supporters during the Gatumba school kit distribution"],
+      ["event-september-13-2025-3", "WCA team presenting complete school kits in Gatumba"],
+      ["event-september-15-2025-1", "Children and families gathered for school supplies"],
+      ["event-september-17-2025-1", "Children and WCA team after a school kit distribution"],
+      ["hero-3", "Children holding notebooks during a WCA education action"]
+    ],
     body:
       "WCA supports vulnerable pupils with complete school kits, learning materials, and practical encouragement so children can return to class with dignity.",
     points: [
@@ -23,6 +35,18 @@ const programPages = {
     bodyKey: "programReliefDetailBody",
     image: "relief",
     alt: "Food packages prepared for families",
+    galleryImages: [
+      ["relief", "Food packages prepared for families"],
+      ["event-may-2025-1", "Prepared food and non-food packages for Gatumba families"],
+      ["event-may-2025-2", "WCA team members with distributed support packages in Gatumba"],
+      ["event-may-2025-3", "Community members gathered during the Gatumba distribution"],
+      ["event-june-2025-1", "Clothing and household items prepared in Rugazi"],
+      ["event-june-2025-2", "WCA team arranging items for the Rugazi distribution"],
+      ["event-june-2025-3", "Community members receiving support in Rugazi"],
+      ["event-december-2025-1", "Kyaka II community members after receiving food support"],
+      ["event-december-2025-2", "Food items prepared for families in Kyaka II"],
+      ["event-december-2025-3", "Children and families gathered during the Kyaka II action"]
+    ],
     body:
       "WCA organizes food and non-food assistance for families affected by poverty, displacement, conflict, and urgent community need.",
     points: [
@@ -37,6 +61,18 @@ const programPages = {
     bodyKey: "programCommunityDetailBody",
     image: "community",
     alt: "Community members gathered during a WCA field action",
+    galleryImages: [
+      ["community", "Community members gathered during a WCA field action"],
+      ["about", "WCA supporters standing beside prepared food packages"],
+      ["hero-1", "Families and children after a community support distribution"],
+      ["hero-2", "Community members receiving support from WCA"],
+      ["hero-4", "Children and field team during community support"],
+      ["hero-5", "Community gathering during a WCA activity"],
+      ["event-april-2026-1", "Families gathered for the April 2026 Gatumba support action"],
+      ["event-april-2026-2", "Food and hygiene support distributed in Gatumba"],
+      ["event-april-2026-3", "WCA field team during the April 2026 Gatumba action"],
+      ["february-2026", "Children holding support items after a community activity"]
+    ],
     body:
       "WCA works with local communities to strengthen resilience through awareness, psychosocial support, vocational skills, and advocacy.",
     points: [
@@ -270,6 +306,25 @@ function picture(name, alt, width = 1200, height = 900, className = "") {
   `;
 }
 
+function renderImageGallery(images, label, className = "program-gallery") {
+  return `
+    <div class="event-gallery ${className}" aria-label="${label}">
+      ${images
+        .slice(0, 10)
+        .map(([name, alt], index) => {
+          const [width, height] = galleryImageDimensions[name] || [1200, 900];
+          return `
+            <picture class="${index === 0 ? "event-main" : ""}">
+              <source srcset="assets/images/${name}.webp" type="image/webp" />
+              <img src="assets/images/${name}.jpg" alt="${alt}" width="${width}" height="${height}" loading="lazy" />
+            </picture>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
 function renderEventCard(event) {
   const eventKey = event.datetime.replaceAll("-", "");
   const gallery = event.images
@@ -354,7 +409,7 @@ function renderProgramPage(program) {
           <p class="section-lead" data-i18n="${program.bodyKey}">${program.body}</p>
         </div>
         <div class="program-detail" data-reveal>
-          ${picture(program.image, program.alt)}
+          ${renderImageGallery(program.galleryImages || [[program.image, program.alt]], `${program.title} photos`)}
           <article class="card">
             <h2 data-i18n="${program.titleKey}">${program.title}</h2>
             <p data-i18n="${program.bodyKey}">${program.body}</p>
@@ -383,6 +438,7 @@ const pages = {
               Ndayishimiye Ismail, Charlene Bishagari, and Grace Batende after a simple and painful
               observation: too many people are left behind.
             </p>
+            <p class="about-founded" data-i18n="foundedAbout">Founded 1 April 2025 in East Africa.</p>
             <p data-i18n="aboutBody">
               Driven by empathy, solidarity, and social justice, the association turns compassion
               into concrete field action across education, healthcare, psychosocial support,

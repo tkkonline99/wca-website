@@ -70,7 +70,6 @@ const languageText = {
     navDonate: "Donate",
     navContact: "Contact",
     donate: "Donate",
-    heroEyebrow: "Founded 1 April 2025 in East Africa",
     heroLead:
       "Supporting vulnerable children and families across East Africa through education, health, relief, and community resilience.",
     donateGofundme: "Donate on GoFundMe",
@@ -86,6 +85,7 @@ const languageText = {
     aboutTitle: "A community of action for children, dignity, and resilience.",
     aboutLead:
       "Wisdom Children Association is a not-for-profit humanitarian association founded by Ndayishimiye Ismail, Charlene Bishagari, and Grace Batende after a simple and painful observation: too many people are left behind.",
+    foundedAbout: "Founded 1 April 2025 in East Africa.",
     aboutBody:
       "Driven by empathy, solidarity, and social justice, the association turns compassion into concrete field action across education, healthcare, psychosocial support, economic empowerment, and community development.",
     governanceTitle: "Governance and accountability",
@@ -228,7 +228,6 @@ const languageText = {
     navDonate: "Donner",
     navContact: "Contact",
     donate: "Donner",
-    heroEyebrow: "Fondée le 1 avril 2025 en Afrique de l'Est",
     heroLead:
       "Soutenir les enfants et les familles vulnérables en Afrique de l'Est par l'éducation, la santé, l'aide humanitaire et la résilience communautaire.",
     donateGofundme: "Donner sur GoFundMe",
@@ -244,6 +243,7 @@ const languageText = {
     aboutTitle: "Une communauté d'action pour les enfants, la dignité et la résilience.",
     aboutLead:
       "Wisdom Children Association est une association humanitaire sans but lucratif fondée par Ndayishimiye Ismail, Charlene Bishagari et Grace Batende après un constat simple et douloureux : trop de personnes sont laissées de côté.",
+    foundedAbout: "Fondée le 1 avril 2025 en Afrique de l'Est.",
     aboutBody:
       "Guidée par l'empathie, la solidarité et la justice sociale, l'association transforme la compassion en actions concrètes dans l'éducation, la santé, le soutien psychosocial, l'autonomisation économique et le développement communautaire.",
     governanceTitle: "Gouvernance et redevabilité",
@@ -381,7 +381,6 @@ const languageText = {
     navDonate: "Changia",
     navContact: "Mawasiliano",
     donate: "Changia",
-    heroEyebrow: "Ilianzishwa 1 Aprili 2025 Afrika Mashariki",
     heroLead:
       "Kusaidia watoto na familia zilizo katika mazingira magumu Afrika Mashariki kupitia elimu, afya, misaada na uimara wa jamii.",
     donateGofundme: "Changia kupitia GoFundMe",
@@ -397,6 +396,7 @@ const languageText = {
     aboutTitle: "Jamii ya hatua kwa watoto, utu na uimara.",
     aboutLead:
       "Wisdom Children Association ni chama cha kibinadamu kisicho cha faida kilichoanzishwa na Ndayishimiye Ismail, Charlene Bishagari na Grace Batende baada ya kuona kuwa watu wengi wanaachwa nyuma.",
+    foundedAbout: "Ilianzishwa 1 Aprili 2025 Afrika Mashariki.",
     aboutBody:
       "Kwa huruma, mshikamano na haki ya kijamii, chama hubadilisha upendo kuwa hatua za moja kwa moja katika elimu, afya, msaada wa kisaikolojia, uwezeshaji wa kiuchumi na maendeleo ya jamii.",
     governanceTitle: "Uongozi na uwajibikaji",
@@ -532,7 +532,6 @@ const languageText = {
     navDonate: "Donar",
     navContact: "Contacto",
     donate: "Donar",
-    heroEyebrow: "Fundada el 1 de abril de 2025 en África Oriental",
     heroLead:
       "Apoyamos a niños y familias vulnerables en África Oriental mediante educación, salud, ayuda humanitaria y resiliencia comunitaria.",
     donateGofundme: "Donar en GoFundMe",
@@ -548,6 +547,7 @@ const languageText = {
     aboutTitle: "Una comunidad de acción para la niñez, la dignidad y la resiliencia.",
     aboutLead:
       "Wisdom Children Association es una asociación humanitaria sin fines de lucro fundada por Ndayishimiye Ismail, Charlene Bishagari y Grace Batende tras observar que demasiadas personas quedan atrás.",
+    foundedAbout: "Fundada el 1 de abril de 2025 en África Oriental.",
     aboutBody:
       "Impulsada por la empatía, la solidaridad y la justicia social, la asociación convierte la compasión en acciones concretas en educación, salud, apoyo psicosocial, autonomía económica y desarrollo comunitario.",
     governanceTitle: "Gobernanza y rendición de cuentas",
@@ -683,7 +683,6 @@ const languageText = {
     navDonate: "捐助",
     navContact: "联系",
     donate: "捐助",
-    heroEyebrow: "2025年4月1日成立于东非",
     heroLead: "通过教育、健康、救援和社区韧性项目，支持东非弱势儿童和家庭。",
     donateGofundme: "通过 GoFundMe 捐助",
     donatePaypal: "通过 PayPal 或银行卡捐助",
@@ -697,6 +696,7 @@ const languageText = {
     aboutMissionMenu: "我们的使命",
     aboutTitle: "为儿童、尊严和韧性而行动的社区。",
     aboutLead: "Wisdom Children Association 是一个非营利人道主义协会，由 Ndayishimiye Ismail、Charlene Bishagari 和 Grace Batende 创立，因为他们看到太多人被落在后面。",
+    foundedAbout: "2025年4月1日成立于东非。",
     aboutBody: "协会以同理心、团结和社会正义为动力，将关怀转化为教育、健康、心理社会支持、经济赋能和社区发展方面的实际行动。",
     governanceTitle: "治理与问责",
     governanceBody: "WCA 由一支致力于透明、问责和诚信的领导团队带领。捐款用于可追踪的实地行动和社区需求。",
@@ -1413,11 +1413,7 @@ const languageBindings = [
   ['[data-nav-key="navImpact"]', "navImpact"],
   ['[data-nav-key="navContact"]', "navContact"],
   [".nav-actions .button.gold", "donate"],
-  ["#home .eyebrow", "heroEyebrow"],
   ["#home .hero-lead", "heroLead"],
-  ['#home .hero-actions a[href*="gofund.me"]', "donateGofundme"],
-  ['#home .hero-actions a[href*="paypal.com"]', "donatePaypal"],
-  ["#home .hero-actions .button.secondary", "joinCircle"],
   [".hero-stat:nth-child(1) span", "statCountries"],
   [".hero-stat:nth-child(2) span", "statActions"],
   [".hero-stat:nth-child(3) span", "statPupils"],
@@ -1425,7 +1421,8 @@ const languageBindings = [
   ["#about .section-kicker", "aboutKicker"],
   ["#about h2", "aboutTitle"],
   ["#about .section-lead", "aboutLead"],
-  ["#about .split > div:first-child > p:nth-of-type(3)", "aboutBody"],
+  [".about-founded", "foundedAbout"],
+  ["#about .split > div:first-child > p:nth-of-type(4)", "aboutBody"],
   ["#about .card h3", "governanceTitle"],
   ["#about .card p", "governanceBody"],
   ["#mission .section-kicker", "missionKicker"],
