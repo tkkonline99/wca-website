@@ -243,8 +243,17 @@ textarea {
   padding: 8px 34px 8px 14px;
   color: var(--teal);
   background-color: var(--surface);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 52%,
+    calc(100% - 12px) 52%;
+  background-repeat: no-repeat;
+  background-size: 6px 6px, 6px 6px;
   font-size: 0.88rem;
   font-weight: 900;
+  appearance: none;
   cursor: pointer;
 }
 
@@ -386,13 +395,20 @@ textarea {
 }
 
 .program-detail .program-gallery {
-  min-height: 420px;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 18px 42px rgba(23, 32, 31, 0.1);
 }
 
+.program-detail .program-gallery picture,
 .program-detail .program-gallery img {
+  height: 100%;
+}
+
+.program-detail .program-gallery img {
+  min-height: 0;
   border-radius: 0;
 }
 
@@ -1966,17 +1982,28 @@ details .policy-body {
 @media (max-width: 760px) {
   .nav {
     padding: 0 14px;
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr) 64px;
+    gap: 0;
   }
 
   .language-select {
-    min-width: 96px;
-    max-width: 96px;
-    padding: 8px 24px 8px 10px;
+    min-width: 64px;
+    max-width: 64px;
+    padding: 8px 20px 8px 10px;
+    background-position:
+      calc(100% - 14px) 52%,
+      calc(100% - 8px) 52%;
     font-size: 0.78rem;
   }
 
   .brand {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
     min-width: 0;
+    transform: none;
   }
 
   .brand-logo {
@@ -1986,6 +2013,20 @@ details .policy-body {
 
   .brand-copy {
     display: none;
+  }
+
+  .menu-toggle {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .nav-actions {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    margin-left: 0;
+    gap: 0;
   }
 
   h1 {
@@ -2012,29 +2053,45 @@ details .policy-body {
 
   .contact-faq {
     max-width: none;
-    margin-right: 18px;
-    margin-left: 18px;
+    margin: 0 18px;
     padding-bottom: 56px;
   }
 
   .contact-faq h2 {
-    font-size: 1.55rem;
+    font-size: 1.8rem;
     line-height: 1.15;
+    margin-bottom: 22px;
+  }
+
+  .faq-list {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fbf8ef;
+    overflow: hidden;
+    box-shadow: 0 18px 42px rgba(23, 32, 31, 0.1);
   }
 
   .faq-list summary {
-    min-height: 74px;
-    padding: 18px 20px;
-    gap: 16px;
+    align-items: center;
+    min-height: 92px;
+    padding: 22px 26px;
+    gap: 18px;
   }
 
   .faq-list summary strong {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.35;
   }
 
   .faq-list p {
-    margin: -4px 20px 22px 56px;
+    margin: -4px 24px 24px 68px;
+  }
+
+  .program-detail .program-gallery {
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    min-height: 0;
+    max-height: 360px;
   }
 
   .social-button {
