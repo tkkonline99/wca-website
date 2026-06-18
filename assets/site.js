@@ -929,6 +929,21 @@ const supplementalLanguageText = {
     progressCultureTitle: "Culture",
     progressCultureBody:
       "Community actions strengthened shared values, belonging, youth participation, and rejection of harmful practices such as early marriage.",
+    statEnrollment: "Enrollment",
+    statDropout: "Dropout",
+    statGirlsParticipation: "Girls' participation",
+    statStableIncome: "Stable income",
+    statMicrocredit: "Microcredit",
+    statActivitiesStarted: "Activities started",
+    statBasicCare: "Basic care",
+    statCommonDiseases: "Common diseases",
+    statPreventionParticipation: "Prevention participation",
+    statCertifiedSkills: "Certified skills",
+    statJobAccess: "Job/IGA access",
+    statImprovedIncome: "Improved income",
+    statParticipation: "Participation",
+    statYouthInvolvement: "Youth involvement",
+    statEarlyMarriage: "Early marriage",
     contactHeading: "Contact",
     contactFormTitle: "Send Us A Message",
     contactName: "Your name",
@@ -1048,6 +1063,67 @@ const supplementalLanguageText = {
     impactPageTitle: "Transformer l'action de terrain en changement mesurable.",
     impactPageLead:
       "WCA mesure l'impact en observant ce qui change pour les enfants et les familles apr\u00e8s chaque activit\u00e9 : retour \u00e0 l'\u00e9cole avec les fournitures n\u00e9cessaires, soutien alimentaire et hygi\u00e9nique re\u00e7u \u00e0 temps, sentiment d'accompagnement, et capacit\u00e9 des partenaires locaux \u00e0 r\u00e9pondre plus vite aux prochains besoins. Chaque mise \u00e0 jour publique doit relier photos, dates, lieux, nombre de b\u00e9n\u00e9ficiaires et notes de suivi.",
+    pageTitlePrograms2026: "Programmes 2026",
+    programs2026Nav: "Programmes 2026",
+    programs2026Title: "Événements et initiatives à venir",
+    programs2026Lead:
+      "Découvrez nos prochains événements et rejoignez-nous pour soutenir notre cause. Ensemble, nous pouvons faire une différence significative dans la vie des personnes les plus défavorisées.",
+    initiativeAgricultureTitle: "Projets agricoles et d'élevage",
+    initiativeAgricultureBody:
+      "Mettre en place des projets agricoles et d'élevage pour renforcer la sécurité alimentaire et la résilience économique.",
+    initiativeSewingTitle: "Centre de formation en couture et coupe",
+    initiativeSewingBody:
+      "Créer un centre de formation en coupe et couture pour soutenir les compétences professionnelles et les activités génératrices de revenus.",
+    initiativeEnglishTitle: "Formation en langue anglaise",
+    initiativeEnglishBody:
+      "Organiser une formation en langue anglaise pour élargir les opportunités éducatives et professionnelles.",
+    initiativeFoodTitle: "Assistance alimentaire et non alimentaire",
+    initiativeFoodBody:
+      "Fournir un soutien alimentaire et non alimentaire essentiel aux personnes et aux familles vulnérables.",
+    initiativeClimateTitle: "Sensibilisation au climat et à la biodiversité",
+    initiativeClimateBody:
+      "Sensibiliser aux facteurs climatiques, à la protection de la biodiversité et aux pratiques communautaires durables.",
+    initiativeChristmasTitle: "Célébration de Noël avec les enfants vulnérables",
+    initiativeChristmasBody:
+      "Clôturer l'année en partageant Noël avec les enfants vulnérables et en renforçant la solidarité communautaire.",
+    initiativeSchoolTitle: "Wisdom School International",
+    initiativeSchoolBody: "Créer une école secondaire pour élargir l'accès à une éducation de qualité.",
+    initiativeOrphanageTitle: "Création d'un orphelinat",
+    initiativeOrphanageBody:
+      "Établir un orphelinat pour offrir protection, soins et un environnement stable aux enfants dans le besoin.",
+    progressTitle: "Progrès mesurables",
+    progressLead:
+      "Les interventions de WCF ont produit des résultats dans l'éducation, l'économie, la santé, les compétences professionnelles et la culture.",
+    progressEducationTitle: "Éducation",
+    progressEducationBody:
+      "Les efforts en éducation ont augmenté la scolarisation, réduit l'abandon scolaire, renforcé la participation des filles et amélioré l'alphabétisation des adultes parmi les participants formés.",
+    progressEconomicTitle: "Impact économique",
+    progressEconomicBody:
+      "Les actions de renforcement économique ont amélioré la stabilité des revenus, l'accès au financement et la création d'activités génératrices de revenus par les jeunes et les femmes.",
+    progressHealthTitle: "Santé",
+    progressHealthBody:
+      "Les interventions en santé ont amélioré l'accès aux soins de base, réduit les maladies courantes et accru la participation aux campagnes de prévention et de sensibilisation.",
+    progressSkillsTitle: "Compétences professionnelles",
+    progressSkillsBody:
+      "Les programmes de renforcement des capacités ont accru l'employabilité, l'autonomie économique et la valeur du capital humain dans la communauté.",
+    progressCultureTitle: "Culture",
+    progressCultureBody:
+      "Les actions communautaires ont renforcé les valeurs partagées, le sentiment d'appartenance, la participation des jeunes et le rejet de pratiques néfastes comme le mariage précoce.",
+    statEnrollment: "Scolarisation",
+    statDropout: "Abandon scolaire",
+    statGirlsParticipation: "Participation des filles",
+    statStableIncome: "Revenu stable",
+    statMicrocredit: "Microcrédit",
+    statActivitiesStarted: "Activités lancées",
+    statBasicCare: "Soins de base",
+    statCommonDiseases: "Maladies courantes",
+    statPreventionParticipation: "Participation à la prévention",
+    statCertifiedSkills: "Compétences certifiées",
+    statJobAccess: "Accès emploi/AGR",
+    statImprovedIncome: "Revenu amélioré",
+    statParticipation: "Participation",
+    statYouthInvolvement: "Implication des jeunes",
+    statEarlyMarriage: "Mariage précoce",
     contactHeading: "Contact",
     contactFormTitle: "Envoyez-nous un message",
     contactName: "Votre nom",
@@ -1164,6 +1240,67 @@ const supplementalLanguageText = {
     impactPageTitle: "Kubadilisha shughuli za uwanjani kuwa mabadiliko yanayopimika.",
     impactPageLead:
       "WCA hupima athari kwa kuangalia kinachobadilika kwa watoto na familia baada ya kila shughuli: kama wanafunzi wanarudi shuleni wakiwa na vifaa sahihi, kama familia zinapata chakula na vifaa vya usafi kwa wakati, kama watu walio hatarini wanahisi kuandamana nao, na kama washirika wa ndani wanaweza kujibu haraka zaidi mahitaji yajayo. Kila taarifa ya umma iunganishe picha, tarehe, maeneo, idadi ya wanufaika na maelezo ya ufuatiliaji.",
+    pageTitlePrograms2026: "Programu za 2026",
+    programs2026Nav: "Programu za 2026",
+    programs2026Title: "Matukio na Mipango Inayokuja",
+    programs2026Lead:
+      "Gundua matukio yetu yanayokuja na ujiunge nasi kuunga mkono lengo letu. Kwa pamoja, tunaweza kuleta mabadiliko makubwa katika maisha ya watu walio katika mazingira magumu zaidi.",
+    initiativeAgricultureTitle: "Miradi ya kilimo na ufugaji",
+    initiativeAgricultureBody:
+      "Kuanzisha miradi ya kilimo na ufugaji ili kuimarisha usalama wa chakula na uthabiti wa kiuchumi.",
+    initiativeSewingTitle: "Kituo cha mafunzo ya ushonaji na ukataji",
+    initiativeSewingBody:
+      "Kuanzisha kituo cha mafunzo ya ukataji na ushonaji ili kusaidia ujuzi wa kitaaluma na shughuli za kuzalisha kipato.",
+    initiativeEnglishTitle: "Mafunzo ya lugha ya Kiingereza",
+    initiativeEnglishBody:
+      "Kuandaa mafunzo ya lugha ya Kiingereza ili kupanua fursa za elimu na kitaaluma.",
+    initiativeFoodTitle: "Msaada wa chakula na usio wa chakula",
+    initiativeFoodBody:
+      "Kutoa msaada muhimu wa chakula na usio wa chakula kwa watu na familia zilizo katika mazingira magumu.",
+    initiativeClimateTitle: "Uhamasishaji kuhusu hali ya hewa na bayoanuwai",
+    initiativeClimateBody:
+      "Kuhamasisha kuhusu sababu za hali ya hewa, ulinzi wa bayoanuwai, na mazoea endelevu ya jamii.",
+    initiativeChristmasTitle: "Sherehe ya Krismasi na watoto walio katika mazingira magumu",
+    initiativeChristmasBody:
+      "Kufunga mwaka kwa kushiriki Krismasi na watoto walio katika mazingira magumu na kuimarisha mshikamano wa jamii.",
+    initiativeSchoolTitle: "Wisdom School International",
+    initiativeSchoolBody: "Kuanzisha shule ya sekondari ili kupanua upatikanaji wa elimu bora.",
+    initiativeOrphanageTitle: "Kuanzishwa kwa kituo cha yatima",
+    initiativeOrphanageBody:
+      "Kuanzisha kituo cha yatima ili kutoa ulinzi, malezi, na mazingira thabiti kwa watoto wenye uhitaji.",
+    progressTitle: "Maendeleo yanayopimika",
+    progressLead:
+      "Afua za WCF zimezaa matunda katika elimu, uchumi, afya, ujuzi wa kitaaluma, na utamaduni.",
+    progressEducationTitle: "Elimu",
+    progressEducationBody:
+      "Juhudi za elimu ziliongeza uandikishaji shuleni, kupunguza kuacha shule, kuimarisha ushiriki wa wasichana, na kuboresha kusoma na kuandika kwa watu wazima waliopata mafunzo.",
+    progressEconomicTitle: "Athari za kiuchumi",
+    progressEconomicBody:
+      "Hatua za kuimarisha uchumi ziliboresha kipato thabiti, upatikanaji wa fedha, na uanzishaji wa shughuli za kuzalisha kipato na vijana na wanawake.",
+    progressHealthTitle: "Afya",
+    progressHealthBody:
+      "Afua za afya ziliboresha upatikanaji wa huduma za msingi, kupunguza magonjwa ya kawaida, na kuongeza ushiriki katika kampeni za kinga na uhamasishaji.",
+    progressSkillsTitle: "Ujuzi wa kitaaluma",
+    progressSkillsBody:
+      "Programu za kujenga uwezo ziliongeza uwezo wa kuajiriwa, uhuru wa kiuchumi, na thamani ya rasilimali watu katika jamii.",
+    progressCultureTitle: "Utamaduni",
+    progressCultureBody:
+      "Shughuli za jamii ziliimarisha maadili ya pamoja, hisia ya kuwa sehemu, ushiriki wa vijana, na kukataa mazoea hatari kama ndoa za utotoni.",
+    statEnrollment: "Uandikishaji",
+    statDropout: "Kuacha shule",
+    statGirlsParticipation: "Ushiriki wa wasichana",
+    statStableIncome: "Kipato thabiti",
+    statMicrocredit: "Mikopo midogo",
+    statActivitiesStarted: "Shughuli zilizoanzishwa",
+    statBasicCare: "Huduma za msingi",
+    statCommonDiseases: "Magonjwa ya kawaida",
+    statPreventionParticipation: "Ushiriki wa kinga",
+    statCertifiedSkills: "Ujuzi ulioidhinishwa",
+    statJobAccess: "Upatikanaji wa kazi",
+    statImprovedIncome: "Kipato kilichoboreshwa",
+    statParticipation: "Ushiriki",
+    statYouthInvolvement: "Ushiriki wa vijana",
+    statEarlyMarriage: "Ndoa za utotoni",
     contactHeading: "Mawasiliano",
     contactFormTitle: "Tutumie ujumbe",
     contactName: "Jina lako",
@@ -1280,6 +1417,67 @@ const supplementalLanguageText = {
     impactPageTitle: "Convertir la acci\u00f3n de campo en cambio medible.",
     impactPageLead:
       "WCA mide el impacto observando qu\u00e9 cambia para los ni\u00f1os y las familias despu\u00e9s de cada actividad: si los estudiantes regresan a la escuela con los materiales correctos, si las familias reciben apoyo alimentario e higi\u00e9nico a tiempo, si las personas vulnerables se sienten acompa\u00f1adas y si los socios locales pueden responder m\u00e1s r\u00e1pido ante la pr\u00f3xima necesidad comunitaria. Cada actualizaci\u00f3n p\u00fablica debe conectar fotos, fechas, lugares, n\u00famero de beneficiarios y notas de seguimiento.",
+    pageTitlePrograms2026: "Programas 2026",
+    programs2026Nav: "Programas 2026",
+    programs2026Title: "Pr\u00f3ximos eventos e iniciativas",
+    programs2026Lead:
+      "Descubra nuestros pr\u00f3ximos eventos y \u00fanase a nosotros para apoyar nuestra causa. Juntos, podemos marcar una diferencia significativa en la vida de las personas m\u00e1s desfavorecidas.",
+    initiativeAgricultureTitle: "Proyectos agr\u00edcolas y ganaderos",
+    initiativeAgricultureBody:
+      "Establecer proyectos agr\u00edcolas y ganaderos para fortalecer la seguridad alimentaria y la resiliencia econ\u00f3mica.",
+    initiativeSewingTitle: "Centro de formaci\u00f3n en costura y corte",
+    initiativeSewingBody:
+      "Crear un centro de formaci\u00f3n en corte y costura para apoyar las habilidades profesionales y las actividades generadoras de ingresos.",
+    initiativeEnglishTitle: "Formaci\u00f3n en lengua inglesa",
+    initiativeEnglishBody:
+      "Organizar formaci\u00f3n en lengua inglesa para ampliar las oportunidades educativas y profesionales.",
+    initiativeFoodTitle: "Asistencia alimentaria y no alimentaria",
+    initiativeFoodBody:
+      "Proporcionar apoyo esencial alimentario y no alimentario a personas y familias vulnerables.",
+    initiativeClimateTitle: "Sensibilizaci\u00f3n sobre el clima y la biodiversidad",
+    initiativeClimateBody:
+      "Sensibilizar sobre los factores clim\u00e1ticos, la protecci\u00f3n de la biodiversidad y las pr\u00e1cticas comunitarias sostenibles.",
+    initiativeChristmasTitle: "Celebraci\u00f3n de Navidad con ni\u00f1os vulnerables",
+    initiativeChristmasBody:
+      "Cerrar el a\u00f1o compartiendo la Navidad con ni\u00f1os vulnerables y fortaleciendo la solidaridad comunitaria.",
+    initiativeSchoolTitle: "Wisdom School International",
+    initiativeSchoolBody: "Crear una escuela secundaria para ampliar el acceso a una educaci\u00f3n de calidad.",
+    initiativeOrphanageTitle: "Creaci\u00f3n de un orfanato",
+    initiativeOrphanageBody:
+      "Establecer un orfanato para brindar protecci\u00f3n, cuidado y un entorno estable a los ni\u00f1os necesitados.",
+    progressTitle: "Progreso medible",
+    progressLead:
+      "Las intervenciones de WCF han producido resultados en educaci\u00f3n, econom\u00eda, salud, habilidades profesionales y cultura.",
+    progressEducationTitle: "Educaci\u00f3n",
+    progressEducationBody:
+      "Los esfuerzos en educaci\u00f3n aumentaron la matriculaci\u00f3n escolar, redujeron la deserci\u00f3n, fortalecieron la participaci\u00f3n de las ni\u00f1as y mejoraron la alfabetizaci\u00f3n de los adultos entre los participantes formados.",
+    progressEconomicTitle: "Impacto econ\u00f3mico",
+    progressEconomicBody:
+      "Las acciones de fortalecimiento econ\u00f3mico mejoraron los ingresos estables, el acceso a la financiaci\u00f3n y la creaci\u00f3n de actividades generadoras de ingresos por parte de j\u00f3venes y mujeres.",
+    progressHealthTitle: "Salud",
+    progressHealthBody:
+      "Las intervenciones en salud mejoraron el acceso a la atenci\u00f3n b\u00e1sica, redujeron las enfermedades comunes y aumentaron la participaci\u00f3n en campa\u00f1as de prevenci\u00f3n y sensibilizaci\u00f3n.",
+    progressSkillsTitle: "Habilidades profesionales",
+    progressSkillsBody:
+      "Los programas de desarrollo de capacidades aumentaron la empleabilidad, la autonom\u00eda econ\u00f3mica y el valor del capital humano en la comunidad.",
+    progressCultureTitle: "Cultura",
+    progressCultureBody:
+      "Las acciones comunitarias fortalecieron los valores compartidos, el sentido de pertenencia, la participaci\u00f3n juvenil y el rechazo de pr\u00e1cticas nocivas como el matrimonio precoz.",
+    statEnrollment: "Matriculaci\u00f3n",
+    statDropout: "Deserci\u00f3n",
+    statGirlsParticipation: "Participaci\u00f3n de las ni\u00f1as",
+    statStableIncome: "Ingresos estables",
+    statMicrocredit: "Microcr\u00e9dito",
+    statActivitiesStarted: "Actividades iniciadas",
+    statBasicCare: "Atenci\u00f3n b\u00e1sica",
+    statCommonDiseases: "Enfermedades comunes",
+    statPreventionParticipation: "Participaci\u00f3n en prevenci\u00f3n",
+    statCertifiedSkills: "Habilidades certificadas",
+    statJobAccess: "Acceso a empleo/AGI",
+    statImprovedIncome: "Ingresos mejorados",
+    statParticipation: "Participaci\u00f3n",
+    statYouthInvolvement: "Participaci\u00f3n juvenil",
+    statEarlyMarriage: "Matrimonio precoz",
     contactHeading: "Contacto",
     contactFormTitle: "Env\u00edenos un mensaje",
     contactName: "Su nombre",
@@ -1396,6 +1594,59 @@ const supplementalLanguageText = {
     impactPageTitle: "\u5c06\u5b9e\u5730\u884c\u52a8\u8f6c\u5316\u4e3a\u53ef\u8861\u91cf\u7684\u6539\u53d8\u3002",
     impactPageLead:
       "WCA \u901a\u8fc7\u89c2\u5bdf\u6bcf\u6b21\u6d3b\u52a8\u540e\u513f\u7ae5\u548c\u5bb6\u5ead\u7684\u53d8\u5316\u6765\u8861\u91cf\u5f71\u54cd\uff1a\u5b66\u751f\u662f\u5426\u5e26\u7740\u6240\u9700\u7528\u54c1\u56de\u5230\u5b66\u6821\uff0c\u5bb6\u5ead\u662f\u5426\u53ca\u65f6\u83b7\u5f97\u98df\u54c1\u548c\u536b\u751f\u652f\u6301\uff0c\u5f31\u52bf\u4eba\u7fa4\u662f\u5426\u611f\u5230\u88ab\u966a\u4f34\uff0c\u4ee5\u53ca\u672c\u5730\u4f19\u4f34\u662f\u5426\u80fd\u5728\u4e0b\u4e00\u6b21\u793e\u533a\u9700\u6c42\u51fa\u73b0\u65f6\u66f4\u5feb\u54cd\u5e94\u3002\u6bcf\u4efd\u516c\u5f00\u66f4\u65b0\u90fd\u5e94\u8054\u7cfb\u7167\u7247\u3001\u65e5\u671f\u3001\u5730\u70b9\u3001\u53d7\u76ca\u4eba\u6570\u548c\u8ddf\u8fdb\u8bf4\u660e\u3002",
+    pageTitlePrograms2026: "2026\u5e74\u9879\u76ee",
+    programs2026Nav: "2026\u5e74\u9879\u76ee",
+    programs2026Title: "\u5373\u5c06\u4e3e\u884c\u7684\u6d3b\u52a8\u548c\u5021\u8bae",
+    programs2026Lead:
+      "\u4e86\u89e3\u6211\u4eec\u5373\u5c06\u4e3e\u884c\u7684\u6d3b\u52a8\uff0c\u5e76\u52a0\u5165\u6211\u4eec\u652f\u6301\u6211\u4eec\u7684\u4e8b\u4e1a\u3002\u643a\u624b\u540c\u5fc3\uff0c\u6211\u4eec\u53ef\u4ee5\u4e3a\u6700\u5f31\u52bf\u7fa4\u4f53\u7684\u751f\u6d3b\u5e26\u6765\u91cd\u5927\u6539\u53d8\u3002",
+    initiativeAgricultureTitle: "\u519c\u4e1a\u548c\u755c\u7267\u9879\u76ee",
+    initiativeAgricultureBody: "\u5efa\u7acb\u519c\u4e1a\u548c\u755c\u7267\u9879\u76ee\uff0c\u4ee5\u52a0\u5f3a\u7cae\u98df\u5b89\u5168\u548c\u7ecf\u6d4e\u97e7\u6027\u3002",
+    initiativeSewingTitle: "\u7f1d\u7eab\u548c\u88c1\u526a\u57f9\u8bad\u4e2d\u5fc3",
+    initiativeSewingBody: "\u5efa\u7acb\u88c1\u526a\u548c\u7f1d\u7eab\u57f9\u8bad\u4e2d\u5fc3\uff0c\u4ee5\u652f\u6301\u4e13\u4e1a\u6280\u80fd\u548c\u521b\u6536\u6d3b\u52a8\u3002",
+    initiativeEnglishTitle: "\u82f1\u8bed\u8bed\u8a00\u57f9\u8bad",
+    initiativeEnglishBody: "\u7ec4\u7ec7\u82f1\u8bed\u8bed\u8a00\u57f9\u8bad\uff0c\u4ee5\u62d3\u5c55\u6559\u80b2\u548c\u804c\u4e1a\u673a\u4f1a\u3002",
+    initiativeFoodTitle: "\u98df\u54c1\u548c\u975e\u98df\u54c1\u63f4\u52a9",
+    initiativeFoodBody: "\u4e3a\u5f31\u52bf\u7fa4\u4f53\u548c\u5bb6\u5ead\u63d0\u4f9b\u5fc5\u8981\u7684\u98df\u54c1\u548c\u975e\u98df\u54c1\u652f\u6301\u3002",
+    initiativeClimateTitle: "\u6c14\u5019\u548c\u751f\u7269\u591a\u6837\u6027\u610f\u8bc6",
+    initiativeClimateBody: "\u63d0\u9ad8\u5bf9\u6c14\u5019\u56e0\u7d20\u3001\u751f\u7269\u591a\u6837\u6027\u4fdd\u62a4\u548c\u53ef\u6301\u7eed\u793e\u533a\u5b9e\u8df5\u7684\u8ba4\u8bc6\u3002",
+    initiativeChristmasTitle: "\u4e0e\u5f31\u52bf\u513f\u7ae5\u5171\u5ea6\u5723\u8bde",
+    initiativeChristmasBody: "\u901a\u8fc7\u4e0e\u5f31\u52bf\u513f\u7ae5\u5171\u5ea6\u5723\u8bde\u3001\u52a0\u5f3a\u793e\u533a\u56e2\u7ed3\u6765\u4e3a\u8fd9\u4e00\u5e74\u753b\u4e0a\u53e5\u53f7\u3002",
+    initiativeSchoolTitle: "Wisdom School International",
+    initiativeSchoolBody: "\u521b\u529e\u4e00\u6240\u4e2d\u5b66\uff0c\u4ee5\u6269\u5927\u83b7\u5f97\u4f18\u8d28\u6559\u80b2\u7684\u673a\u4f1a\u3002",
+    initiativeOrphanageTitle: "\u521b\u5efa\u5b64\u513f\u9662",
+    initiativeOrphanageBody: "\u5efa\u7acb\u5b64\u513f\u9662\uff0c\u4e3a\u6709\u9700\u8981\u7684\u513f\u7ae5\u63d0\u4f9b\u4fdd\u62a4\u3001\u7167\u6599\u548c\u7a33\u5b9a\u7684\u73af\u5883\u3002",
+    progressTitle: "\u53ef\u8861\u91cf\u7684\u8fdb\u5c55",
+    progressLead: "WCF \u7684\u5e72\u9884\u5728\u6559\u80b2\u3001\u7ecf\u6d4e\u3001\u5065\u5eb7\u3001\u4e13\u4e1a\u6280\u80fd\u548c\u6587\u5316\u65b9\u9762\u53d6\u5f97\u4e86\u6210\u679c\u3002",
+    progressEducationTitle: "\u6559\u80b2",
+    progressEducationBody:
+      "\u6559\u80b2\u65b9\u9762\u7684\u52aa\u529b\u63d0\u9ad8\u4e86\u5165\u5b66\u7387\uff0c\u964d\u4f4e\u4e86\u8f8d\u5b66\u7387\uff0c\u52a0\u5f3a\u4e86\u5973\u7ae5\u7684\u53c2\u4e0e\uff0c\u5e76\u63d0\u9ad8\u4e86\u53d7\u8bad\u53c2\u4e0e\u8005\u4e2d\u6210\u4eba\u7684\u8bc6\u5b57\u6c34\u5e73\u3002",
+    progressEconomicTitle: "\u7ecf\u6d4e\u5f71\u54cd",
+    progressEconomicBody:
+      "\u7ecf\u6d4e\u5f3a\u5316\u884c\u52a8\u6539\u5584\u4e86\u7a33\u5b9a\u6536\u5165\u3001\u878d\u8d44\u6e20\u9053\uff0c\u4ee5\u53ca\u9752\u5e74\u548c\u5987\u5973\u521b\u529e\u521b\u6536\u6d3b\u52a8\u7684\u60c5\u51b5\u3002",
+    progressHealthTitle: "\u5065\u5eb7",
+    progressHealthBody:
+      "\u536b\u751f\u5e72\u9884\u6539\u5584\u4e86\u57fa\u672c\u533b\u7597\u7684\u53ef\u53ca\u6027\uff0c\u51cf\u5c11\u4e86\u5e38\u89c1\u75be\u75c5\uff0c\u5e76\u63d0\u9ad8\u4e86\u5bf9\u9884\u9632\u548c\u5ba3\u4f20\u6d3b\u52a8\u7684\u53c2\u4e0e\u3002",
+    progressSkillsTitle: "\u4e13\u4e1a\u6280\u80fd",
+    progressSkillsBody:
+      "\u80fd\u529b\u5efa\u8bbe\u9879\u76ee\u63d0\u9ad8\u4e86\u5c31\u4e1a\u80fd\u529b\u3001\u7ecf\u6d4e\u81ea\u4e3b\u6027\u4ee5\u53ca\u793e\u533a\u4eba\u529b\u8d44\u672c\u7684\u4ef7\u503c\u3002",
+    progressCultureTitle: "\u6587\u5316",
+    progressCultureBody:
+      "\u793e\u533a\u884c\u52a8\u52a0\u5f3a\u4e86\u5171\u540c\u4ef7\u503c\u89c2\u3001\u5f52\u5c5e\u611f\u3001\u9752\u5e74\u53c2\u4e0e\uff0c\u5e76\u62b5\u5236\u65e9\u5a5a\u7b49\u6709\u5bb3\u4e60\u4fd7\u3002",
+    statEnrollment: "\u5165\u5b66\u7387",
+    statDropout: "\u8f8d\u5b66\u7387",
+    statGirlsParticipation: "\u5973\u7ae5\u53c2\u4e0e",
+    statStableIncome: "\u7a33\u5b9a\u6536\u5165",
+    statMicrocredit: "\u5c0f\u989d\u4fe1\u8d37",
+    statActivitiesStarted: "\u5df2\u542f\u52a8\u7684\u6d3b\u52a8",
+    statBasicCare: "\u57fa\u672c\u533b\u7597",
+    statCommonDiseases: "\u5e38\u89c1\u75be\u75c5",
+    statPreventionParticipation: "\u9884\u9632\u53c2\u4e0e",
+    statCertifiedSkills: "\u8ba4\u8bc1\u6280\u80fd",
+    statJobAccess: "\u5c31\u4e1a/\u521b\u6536\u673a\u4f1a",
+    statImprovedIncome: "\u6536\u5165\u63d0\u9ad8",
+    statParticipation: "\u53c2\u4e0e",
+    statYouthInvolvement: "\u9752\u5e74\u53c2\u4e0e",
+    statEarlyMarriage: "\u65e9\u5a5a",
     contactHeading: "\u8054\u7cfb",
     contactFormTitle: "\u7ed9\u6211\u4eec\u7559\u8a00",
     contactName: "\u60a8\u7684\u59d3\u540d",

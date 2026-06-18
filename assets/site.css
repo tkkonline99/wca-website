@@ -149,6 +149,7 @@ textarea {
   color: var(--muted);
   font-weight: 700;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .nav-item {
@@ -167,10 +168,12 @@ textarea {
   font-weight: 800;
   font-size: 0.9rem;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .nav-trigger::after {
   content: "";
+  flex: 0 0 auto;
   width: 7px;
   height: 7px;
   border-right: 2px solid currentColor;

@@ -530,9 +530,9 @@ const impactProgress = [
     bodyKey: "progressEducationBody",
     accent: "teal",
     stats: [
-      ["Enrollment", "54% → 85%"],
-      ["Dropout", "26% → 9%"],
-      ["Girls’ participation", "40% → 78%"]
+      ["statEnrollment", "Enrollment", "54% → 85%"],
+      ["statDropout", "Dropout", "26% → 9%"],
+      ["statGirlsParticipation", "Girls’ participation", "40% → 78%"]
     ]
   },
   {
@@ -542,9 +542,9 @@ const impactProgress = [
     bodyKey: "progressEconomicBody",
     accent: "gold",
     stats: [
-      ["Stable income", "28% → 66%"],
-      ["Microcredit", "15% → 52%"],
-      ["Activities started", "22% → 60%"]
+      ["statStableIncome", "Stable income", "28% → 66%"],
+      ["statMicrocredit", "Microcredit", "15% → 52%"],
+      ["statActivitiesStarted", "Activities started", "22% → 60%"]
     ]
   },
   {
@@ -554,9 +554,9 @@ const impactProgress = [
     bodyKey: "progressHealthBody",
     accent: "teal",
     stats: [
-      ["Basic care", "40% → 78%"],
-      ["Common diseases", "35% → 12%"],
-      ["Prevention participation", "30% → 70%"]
+      ["statBasicCare", "Basic care", "40% → 78%"],
+      ["statCommonDiseases", "Common diseases", "35% → 12%"],
+      ["statPreventionParticipation", "Prevention participation", "30% → 70%"]
     ]
   },
   {
@@ -566,9 +566,9 @@ const impactProgress = [
     bodyKey: "progressSkillsBody",
     accent: "gold",
     stats: [
-      ["Certified skills", "20% → 65%"],
-      ["Job/IGA access", "18% → 58%"],
-      ["Improved income", "30% → 55%"]
+      ["statCertifiedSkills", "Certified skills", "20% → 65%"],
+      ["statJobAccess", "Job/IGA access", "18% → 58%"],
+      ["statImprovedIncome", "Improved income", "30% → 55%"]
     ]
   },
   {
@@ -578,9 +578,9 @@ const impactProgress = [
     bodyKey: "progressCultureBody",
     accent: "teal",
     stats: [
-      ["Participation", "38% → 72%"],
-      ["Youth involvement", "25% → 60%"],
-      ["Early marriage", "40% → 15%"]
+      ["statParticipation", "Participation", "38% → 72%"],
+      ["statYouthInvolvement", "Youth involvement", "25% → 60%"],
+      ["statEarlyMarriage", "Early marriage", "40% → 15%"]
     ]
   }
 ];
@@ -593,7 +593,7 @@ function renderImpactProgress() {
         <p data-i18n="${item.bodyKey}">${item.body}</p>
         <div class="stat-pills">
           ${item.stats
-            .map(([label, value]) => `<span class="stat-pill"><strong>${label}:</strong> ${value}</span>`)
+            .map(([key, label, value]) => `<span class="stat-pill"><strong data-i18n="${key}">${label}</strong>: ${value}</span>`)
             .join("")}
         </div>
       </article>
