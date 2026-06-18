@@ -426,6 +426,7 @@ function renderProgramPage(program) {
 const upcomingInitiatives = [
   {
     period: "February 2026 · Burundi",
+    periodKey: "initiativeAgriculturePeriod",
     title: "Agriculture and livestock projects",
     titleKey: "initiativeAgricultureTitle",
     body: "Set up agricultural and livestock projects to strengthen food security and economic resilience.",
@@ -434,6 +435,7 @@ const upcomingInitiatives = [
   },
   {
     period: "April 2026 · Burundi & DR Congo",
+    periodKey: "initiativeSewingPeriod",
     title: "Sewing and tailoring training center",
     titleKey: "initiativeSewingTitle",
     body: "Create a training center in cutting and sewing to support professional skills and income-generating activities.",
@@ -442,6 +444,7 @@ const upcomingInitiatives = [
   },
   {
     period: "June 2026 · Burundi",
+    periodKey: "initiativeEnglishPeriod",
     title: "English language training",
     titleKey: "initiativeEnglishTitle",
     body: "Organize English language training to expand educational and professional opportunities.",
@@ -450,6 +453,7 @@ const upcomingInitiatives = [
   },
   {
     period: "August 2026 · DRC, Burundi & Uganda",
+    periodKey: "initiativeFoodPeriod",
     title: "Food and non-food assistance",
     titleKey: "initiativeFoodTitle",
     body: "Provide essential food and non-food support to vulnerable people and families.",
@@ -458,6 +462,7 @@ const upcomingInitiatives = [
   },
   {
     period: "October 2026 · Burundi, DR Congo, Rwanda & Uganda",
+    periodKey: "initiativeClimatePeriod",
     title: "Climate and biodiversity awareness",
     titleKey: "initiativeClimateTitle",
     body: "Raise awareness on climate factors, biodiversity protection, and sustainable community practices.",
@@ -466,6 +471,7 @@ const upcomingInitiatives = [
   },
   {
     period: "December 2026 · Burundi",
+    periodKey: "initiativeChristmasPeriod",
     title: "Christmas celebration with vulnerable children",
     titleKey: "initiativeChristmasTitle",
     body: "Close the year by sharing Christmas with vulnerable children and strengthening community solidarity.",
@@ -474,6 +480,7 @@ const upcomingInitiatives = [
   },
   {
     period: "Project for 2028",
+    periodKey: "initiativeSchoolPeriod",
     title: "Wisdom School International",
     titleKey: "initiativeSchoolTitle",
     body: "Create a secondary school to expand access to quality education.",
@@ -482,6 +489,7 @@ const upcomingInitiatives = [
   },
   {
     period: "Project for 2030",
+    periodKey: "initiativeOrphanagePeriod",
     title: "Orphanage creation",
     titleKey: "initiativeOrphanageTitle",
     body: "Establish an orphanage to provide protection, care, and a stable environment for children in need.",
@@ -494,7 +502,7 @@ function renderUpcomingPrograms() {
   const cards = upcomingInitiatives
     .map((item) => `
       <article class="initiative-card${item.accent === "gold" ? " is-gold" : ""}" data-reveal>
-        <p class="initiative-period">${item.period}</p>
+        <p class="initiative-period" data-i18n="${item.periodKey}">${item.period}</p>
         <div class="initiative-body">
           <h3 data-i18n="${item.titleKey}">${item.title}</h3>
           <p data-i18n="${item.bodyKey}">${item.body}</p>
