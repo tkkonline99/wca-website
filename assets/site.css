@@ -1546,6 +1546,109 @@ tr:last-child td {
   font-size: 0.96rem;
 }
 
+/* 2026 Programs — upcoming initiatives */
+.initiative-list {
+  display: grid;
+  gap: 18px;
+}
+
+.initiative-card {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--teal);
+  border-radius: 16px;
+  padding: 22px 28px;
+  box-shadow: var(--shadow);
+}
+
+.initiative-card.is-gold {
+  border-left-color: var(--gold);
+}
+
+.initiative-period {
+  margin: 0;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.4;
+}
+
+.initiative-body h3 {
+  margin: 0 0 8px;
+  color: var(--teal);
+  font-size: 1.3rem;
+}
+
+.initiative-body p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Impact — measurable progress */
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.progress-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--teal);
+  border-radius: 16px;
+  padding: 26px 28px;
+  box-shadow: var(--shadow);
+}
+
+.progress-card.is-gold {
+  border-top-color: var(--gold);
+}
+
+.progress-card h3 {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-size: 1.45rem;
+}
+
+.progress-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.stat-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.stat-pill {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.stat-pill strong {
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .initiative-card {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .team-founder-grid {
   align-items: stretch;
 }

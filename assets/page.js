@@ -423,6 +423,202 @@ function renderProgramPage(program) {
   `;
 }
 
+const upcomingInitiatives = [
+  {
+    period: "February 2026 · Burundi",
+    title: "Agriculture and livestock projects",
+    titleKey: "initiativeAgricultureTitle",
+    body: "Set up agricultural and livestock projects to strengthen food security and economic resilience.",
+    bodyKey: "initiativeAgricultureBody",
+    accent: "teal"
+  },
+  {
+    period: "April 2026 · Burundi & DR Congo",
+    title: "Sewing and tailoring training center",
+    titleKey: "initiativeSewingTitle",
+    body: "Create a training center in cutting and sewing to support professional skills and income-generating activities.",
+    bodyKey: "initiativeSewingBody",
+    accent: "gold"
+  },
+  {
+    period: "June 2026 · Burundi",
+    title: "English language training",
+    titleKey: "initiativeEnglishTitle",
+    body: "Organize English language training to expand educational and professional opportunities.",
+    bodyKey: "initiativeEnglishBody",
+    accent: "teal"
+  },
+  {
+    period: "August 2026 · DRC, Burundi & Uganda",
+    title: "Food and non-food assistance",
+    titleKey: "initiativeFoodTitle",
+    body: "Provide essential food and non-food support to vulnerable people and families.",
+    bodyKey: "initiativeFoodBody",
+    accent: "gold"
+  },
+  {
+    period: "October 2026 · Burundi, DR Congo, Rwanda & Uganda",
+    title: "Climate and biodiversity awareness",
+    titleKey: "initiativeClimateTitle",
+    body: "Raise awareness on climate factors, biodiversity protection, and sustainable community practices.",
+    bodyKey: "initiativeClimateBody",
+    accent: "teal"
+  },
+  {
+    period: "December 2026 · Burundi",
+    title: "Christmas celebration with vulnerable children",
+    titleKey: "initiativeChristmasTitle",
+    body: "Close the year by sharing Christmas with vulnerable children and strengthening community solidarity.",
+    bodyKey: "initiativeChristmasBody",
+    accent: "gold"
+  },
+  {
+    period: "Project for 2028",
+    title: "Wisdom School International",
+    titleKey: "initiativeSchoolTitle",
+    body: "Create a secondary school to expand access to quality education.",
+    bodyKey: "initiativeSchoolBody",
+    accent: "teal"
+  },
+  {
+    period: "Project for 2030",
+    title: "Orphanage creation",
+    titleKey: "initiativeOrphanageTitle",
+    body: "Establish an orphanage to provide protection, care, and a stable environment for children in need.",
+    bodyKey: "initiativeOrphanageBody",
+    accent: "gold"
+  }
+];
+
+function renderUpcomingPrograms() {
+  const cards = upcomingInitiatives
+    .map((item) => `
+      <article class="initiative-card${item.accent === "gold" ? " is-gold" : ""}" data-reveal>
+        <p class="initiative-period">${item.period}</p>
+        <div class="initiative-body">
+          <h3 data-i18n="${item.titleKey}">${item.title}</h3>
+          <p data-i18n="${item.bodyKey}">${item.body}</p>
+        </div>
+      </article>
+    `)
+    .join("");
+
+  return `
+    <section class="section page-section" id="page-programs-2026">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker" data-i18n="programsKicker">Programs</p>
+          <h1 data-i18n="programs2026Title">Upcoming Events and Initiatives</h1>
+          <p class="section-lead" data-i18n="programs2026Lead">
+            Discover our upcoming events and join us in supporting our cause. Together, we can make a
+            significant difference in the lives of the most disadvantaged people.
+          </p>
+        </div>
+        <div class="initiative-list">
+          ${cards}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+const impactProgress = [
+  {
+    title: "Education",
+    titleKey: "progressEducationTitle",
+    body: "Efforts in education increased school enrollment, reduced dropout rates, strengthened girls’ participation, and improved adult literacy among trained participants.",
+    bodyKey: "progressEducationBody",
+    accent: "teal",
+    stats: [
+      ["Enrollment", "54% → 85%"],
+      ["Dropout", "26% → 9%"],
+      ["Girls’ participation", "40% → 78%"]
+    ]
+  },
+  {
+    title: "Economic impact",
+    titleKey: "progressEconomicTitle",
+    body: "Economic-strengthening actions improved stable income, access to financing, and the creation of income-generating activities by youth and women.",
+    bodyKey: "progressEconomicBody",
+    accent: "gold",
+    stats: [
+      ["Stable income", "28% → 66%"],
+      ["Microcredit", "15% → 52%"],
+      ["Activities started", "22% → 60%"]
+    ]
+  },
+  {
+    title: "Health",
+    titleKey: "progressHealthTitle",
+    body: "Health interventions improved access to basic care, reduced common diseases, and increased participation in prevention and awareness campaigns.",
+    bodyKey: "progressHealthBody",
+    accent: "teal",
+    stats: [
+      ["Basic care", "40% → 78%"],
+      ["Common diseases", "35% → 12%"],
+      ["Prevention participation", "30% → 70%"]
+    ]
+  },
+  {
+    title: "Professional skills",
+    titleKey: "progressSkillsTitle",
+    body: "Capacity-building programs increased employability, economic autonomy, and the value of human capital in the community.",
+    bodyKey: "progressSkillsBody",
+    accent: "gold",
+    stats: [
+      ["Certified skills", "20% → 65%"],
+      ["Job/IGA access", "18% → 58%"],
+      ["Improved income", "30% → 55%"]
+    ]
+  },
+  {
+    title: "Culture",
+    titleKey: "progressCultureTitle",
+    body: "Community actions strengthened shared values, belonging, youth participation, and rejection of harmful practices such as early marriage.",
+    bodyKey: "progressCultureBody",
+    accent: "teal",
+    stats: [
+      ["Participation", "38% → 72%"],
+      ["Youth involvement", "25% → 60%"],
+      ["Early marriage", "40% → 15%"]
+    ]
+  }
+];
+
+function renderImpactProgress() {
+  const cards = impactProgress
+    .map((item) => `
+      <article class="progress-card${item.accent === "gold" ? " is-gold" : ""}" data-reveal>
+        <h3 data-i18n="${item.titleKey}">${item.title}</h3>
+        <p data-i18n="${item.bodyKey}">${item.body}</p>
+        <div class="stat-pills">
+          ${item.stats
+            .map(([label, value]) => `<span class="stat-pill"><strong>${label}:</strong> ${value}</span>`)
+            .join("")}
+        </div>
+      </article>
+    `)
+    .join("");
+
+  return `
+    <section class="section alt page-section" id="page-impact-progress">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker" data-i18n="impactKicker">Impact</p>
+          <h2 data-i18n="progressTitle">Measurable progress</h2>
+          <p class="section-lead" data-i18n="progressLead">
+            WCF interventions have produced results in education, the economy, health, professional
+            skills, and culture.
+          </p>
+        </div>
+        <div class="progress-grid">
+          ${cards}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
 const pages = {
   "who-we-are": {
     title: "Who we are",
@@ -606,7 +802,13 @@ const pages = {
           </div>
         </div>
       </section>
+      ${renderImpactProgress()}
     `
+  },
+  "programs-2026": {
+    title: "2026 Programs",
+    titleKey: "pageTitlePrograms2026",
+    html: renderUpcomingPrograms()
   },
   contact: {
     title: "Contact",
@@ -741,6 +943,7 @@ document.querySelectorAll(`[data-page-link="${activePage}"]`).forEach((link) => 
 const currentGroup = {
   "who-we-are": "navAbout",
   mission: "navAbout",
+  "programs-2026": "navPrograms",
   "education-school-kits": "navPrograms",
   "humanitarian-relief": "navPrograms",
   "community-resilience": "navPrograms",

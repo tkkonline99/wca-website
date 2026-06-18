@@ -883,6 +883,52 @@ const supplementalLanguageText = {
     impactPageTitle: "Turning field action into measurable change.",
     impactPageLead:
       "WCA measures impact by looking at what changes for children and families after each activity: whether pupils return to school with the right supplies, whether families receive timely food and hygiene support, whether vulnerable people feel accompanied, and whether local partners can respond faster the next time a community need appears. Each public update should connect photos, dates, locations, beneficiary counts, and follow-up notes so supporters can see both the human story and the evidence behind it.",
+    pageTitlePrograms2026: "2026 Programs",
+    programs2026Nav: "2026 Programs",
+    programs2026Title: "Upcoming Events and Initiatives",
+    programs2026Lead:
+      "Discover our upcoming events and join us in supporting our cause. Together, we can make a significant difference in the lives of the most disadvantaged people.",
+    initiativeAgricultureTitle: "Agriculture and livestock projects",
+    initiativeAgricultureBody:
+      "Set up agricultural and livestock projects to strengthen food security and economic resilience.",
+    initiativeSewingTitle: "Sewing and tailoring training center",
+    initiativeSewingBody:
+      "Create a training center in cutting and sewing to support professional skills and income-generating activities.",
+    initiativeEnglishTitle: "English language training",
+    initiativeEnglishBody:
+      "Organize English language training to expand educational and professional opportunities.",
+    initiativeFoodTitle: "Food and non-food assistance",
+    initiativeFoodBody:
+      "Provide essential food and non-food support to vulnerable people and families.",
+    initiativeClimateTitle: "Climate and biodiversity awareness",
+    initiativeClimateBody:
+      "Raise awareness on climate factors, biodiversity protection, and sustainable community practices.",
+    initiativeChristmasTitle: "Christmas celebration with vulnerable children",
+    initiativeChristmasBody:
+      "Close the year by sharing Christmas with vulnerable children and strengthening community solidarity.",
+    initiativeSchoolTitle: "Wisdom School International",
+    initiativeSchoolBody: "Create a secondary school to expand access to quality education.",
+    initiativeOrphanageTitle: "Orphanage creation",
+    initiativeOrphanageBody:
+      "Establish an orphanage to provide protection, care, and a stable environment for children in need.",
+    progressTitle: "Measurable progress",
+    progressLead:
+      "WCF interventions have produced results in education, the economy, health, professional skills, and culture.",
+    progressEducationTitle: "Education",
+    progressEducationBody:
+      "Efforts in education increased school enrollment, reduced dropout rates, strengthened girls’ participation, and improved adult literacy among trained participants.",
+    progressEconomicTitle: "Economic impact",
+    progressEconomicBody:
+      "Economic-strengthening actions improved stable income, access to financing, and the creation of income-generating activities by youth and women.",
+    progressHealthTitle: "Health",
+    progressHealthBody:
+      "Health interventions improved access to basic care, reduced common diseases, and increased participation in prevention and awareness campaigns.",
+    progressSkillsTitle: "Professional skills",
+    progressSkillsBody:
+      "Capacity-building programs increased employability, economic autonomy, and the value of human capital in the community.",
+    progressCultureTitle: "Culture",
+    progressCultureBody:
+      "Community actions strengthened shared values, belonging, youth participation, and rejection of harmful practices such as early marriage.",
     contactHeading: "Contact",
     contactFormTitle: "Send Us A Message",
     contactName: "Your name",
@@ -1401,6 +1447,7 @@ const languageBindings = [
   [".brand-copy span", "tagline"],
   ['[data-nav-key="navAbout"]', "navAbout"],
   ['[data-nav-key="navPrograms"]', "navPrograms"],
+  ['[data-nav-dropdown-link="programs2026Nav"]', "programs2026Nav"],
   ['[data-nav-key="navAchievements"]', "navAchievements"],
   ['[data-nav-dropdown-link="aboutKicker"]', "aboutKicker"],
   ['[data-nav-dropdown-link="missionCardTitle"]', "aboutMissionMenu"],
